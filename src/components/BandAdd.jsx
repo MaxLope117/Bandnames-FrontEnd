@@ -24,7 +24,7 @@ export const BandAdd = () => {
     return (
     
         <>
-            <h4>Agregar Banda</h4>
+            <h4>Add Band</h4>
 
             <form onSubmit={ onSubmit }>
 

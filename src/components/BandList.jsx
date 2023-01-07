@@ -76,7 +76,7 @@ export const BandList = () => {
                           className="btn btn-danger"
                           onClick={ () => removeBand( id ) }
                         >
-                            Borrar
+                            Delete
                         </button>
                     </td>
                 </tr>
@@ -94,9 +94,9 @@ export const BandList = () => {
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Nombre</th>
-                        <th>Votos</th>
-                        <th>Borrar</th>
+                        <th>Name</th>
+                        <th>Votes</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>

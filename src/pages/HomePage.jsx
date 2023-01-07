@@ -1,24 +1,10 @@
 import { useContext } from 'react';
-import { BandList, BandAdd } from '../components';
+import { BandList, BandAdd, BandChart } from '../components';
 import { SocketContext } from '../context';
 
 const HomePage = () => {
 
-  // const [ bands, setBands ] = useState([]);
-
   const { online } = useContext( SocketContext );
-
-  // useEffect(() => {
-
-  //   socket.on('current-bands', (bands) => {
-  //     // console.log(bands);
-  //     setBands( bands );
-  //   });
-
-  // }, [ socket ]);
-
-  
-
   
   return (
 
@@ -37,6 +23,12 @@ const HomePage = () => {
 
       <h1>BandNames</h1>
       <hr />
+
+      <div className="row">
+        <div className="col">
+          <BandChart />
+        </div>
+      </div>
 
       <div className="row">  
         <div className="col-8">
